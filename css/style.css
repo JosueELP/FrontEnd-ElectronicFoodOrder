@@ -79,9 +79,98 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+html, body {
+  height: 100%;
+}
+
+.hamburguer {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  padding: 0px;
+}
+
+.header {
+  padding-bottom: 100px;
+}
+
+.navigation li {
+  padding: 5px 10px;
+  transition: all 0.4s;
+}
+
+.navigation li:hover {
+  background-color: rgba(100, 100, 100, 0.8);
+}
+
+.navigation li a:hover {
+  text-decoration: none;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+.open-sans {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+}
+
+.dancing-script {
+  font-family: 'Dancing Script', cursive;
+}
+
+.title-text, .navigation li {
+  font-size: 2em;
+}
+
+.center-text {
+  text-align: center;
+}
+
+.white {
+  color: white;
+}
+
+.black, .navigation li a {
+  color: black;
+}
+
+.subtittle {
+  font-size: 2.5em;
+}
+
+.medium {
+  font-size: 1.5em;
+}
+
+.top {
+  top: 2em;
+}
+
+.right {
+  right: 5em;
+}
+
+.left {
+  left: 0em;
+}
+
+.bottom {
+  bottom: 0em;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
 /*
  * Hide visually and from screen readers
  */

@@ -13,5 +13,13 @@
 	%link{:rel => "stylesheet", :href => "css/style.css"}
 	%title ElectronicFoodOrder
 %body
-	%h1 Hola Mundo
-	
+	.header
+		%nav.dancing-script.top.right.fixed.navigation
+			/ Se crea un arreglo para contener los titulos de la barra de navegacion
+			-menu= ["Menú", "Categorias", "Contacto"]
+			%ul.list-inline
+				-menu.each do |item|
+					%li
+						%a{:href => ""}= item
+	.image-container
+		.hamburguer{style: "background-image: url(/images/hb.jpg)"}

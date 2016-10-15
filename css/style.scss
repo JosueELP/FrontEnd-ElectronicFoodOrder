@@ -88,8 +88,44 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+//Ajustes al html y al body para que su height abarque el 100% de la pagina
+html, body {
+    height: 100%;
+}
 
+.image-container {
+    //Propiedad para volver al div que contiene la imagen su height 100%
+    //height: 100%;
 
+}
+//Clase hamburguer cuyo proposito es acomodar la imagen lo mejor posible con el tamaño que tiene
+.hamburguer{
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    padding: 0px;
+}
+//Clase header que contiene la barra de navegacion
+.header{
+    padding-bottom: 100px;
+}
+//Clase navigation que modifica todos los elementos li de la lista, asi como tambien todos los elementos a
+.navigation{
+    li{
+        @extend .title-text;
+        padding: 5px 10px;
+        transition: all 0.4s;
+        &:hover{
+            background-color: rgba(100,100,100,0.8);
+        }
+        a{
+            @extend .black;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
+}
 
 
 
@@ -107,6 +143,57 @@ textarea {
 /* ==========================================================================
    Helper classes
    ========================================================================== */
+
+//Clases de estilos de texto
+.open-sans{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+.dancing-script{
+    font-family: 'Dancing Script', cursive;
+}
+.title-text{
+    font-size: 2em;
+}
+.center-text{
+    text-align: center;
+}
+.white{
+    color: white;
+}
+.black{
+    color: black;
+}
+.subtittle{
+    font-size: 2.5em;
+}
+.medium{
+    font-size: 1.5em;
+}
+
+//Clases para posicionamiento
+.top{
+    top: 2em;
+}
+.right{
+    right: 5em;
+}
+.left{
+    left: 0em;
+}
+.bottom{
+    bottom: 0em;
+}
+.fixed{
+    position: fixed;
+}
+.relative{
+    position: relative;
+}
+.absolute{
+    position: absolute;
+}
+
 
 /*
  * Hide visually and from screen readers
